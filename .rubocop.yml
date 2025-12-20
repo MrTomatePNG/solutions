@@ -1,0 +1,28 @@
+# .rubocop.yml na raiz do projeto
+
+# Desativa as métricas que reclamam de "métodos muito longos" ou "muitas linhas"
+Metrics/MethodLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+
+# Para de reclamar de falta de comentários no topo de cada classe (o mais chato!)
+Style/Documentation:
+  Enabled: false
+
+# Para de forçar aspas simples ou duplas (deixa você escolher)
+Style/StringLiterals:
+  Enabled: false
+
+# Permite nomes de variáveis curtos (ex: 'i', 'db', 'id')
+Naming/VariableNumber:
+  Enabled: false
+
+# Aumenta o limite de caracteres por linha (padrão é 80, o que é muito pouco hoje)
+Layout/LineLength:
+  Max: 120
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
